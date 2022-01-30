@@ -1,0 +1,100 @@
+@import "null.css";
+
+/* Селектор тега */
+h1 {
+	color: red;
+}
+span {
+	color: purple;
+}
+
+/* Селектор ID */
+#main-menu {
+	color: orange;
+}
+
+/* Селектор класса */
+.first-paragraph {
+	color: blue;
+}
+
+/*Классы first-paragraph и example Одноременно*/
+.first-paragraph.example {
+	color: skyblue;
+}
+
+/*Классы second-paragraph и example Одноременно*/
+.second-paragraph.example {
+	color: yellow;
+}
+
+/*Классы third-paragraph и example и big Одноременно*/
+.third-paragraph.example.big {
+	color: teal;
+}
+
+/* Все теги h3 c классом point-one*/
+h3.point-one {
+	color: springgreen;
+}
+/* Все теги h3 c классом point-two*/
+h3.point-two {
+	color: tomato;
+}
+/* Все теги span c классом highlighted-two*/
+span.highlighted-two {
+	color: yellowgreen;
+}
+
+/* Все Span которие внутри P */
+
+p span {
+	color: saddlebrown;
+}
+
+/* Селектор атрибута (префикс или ключевое слово)*/
+[class*="-test"] {
+	color: lawngreen;
+}
+
+/* Селектор атрибута (общий) */
+[title="footer"] {
+	color: indigo;
+}
+
+/* Обращение к классу third-paragraph, который внутри класса block-five*/
+.block-five .third-paragraph {
+	color: goldenrod;
+}
+
+/* Обращение к классу date, который внутри тега p*/
+p .date {
+	color: green;
+}
+
+/* Перечесление классов */
+.test-two,
+.test-three,
+.test-four {
+	color: hotpink;
+}
+
+/* Обращение к первому уровню вложености */
+.block-eleven > p {
+	color: coral;
+}
+
+/* Обращение к ОДНОМУ обьекту p (не имеет своего класса), который идет сразу за елеметои с классом next-first-paragraph */
+.next-first-paragraph + p {
+	color: aqua;
+}
+
+/* Обращение к ВСЕМ обьектам p (не имеют своего класса), которые идут сразу за елеметои с классом next-second-paragraph */
+.next-second-paragraph ~ p {
+	color: brown;
+}
+
+/* Обращение к первому уровлю span, которие в первом уровне p, который в елементе с классом test-pro */
+.test-pro > p > span {
+	color: darkblue;
+}
